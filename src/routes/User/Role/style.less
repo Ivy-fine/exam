@@ -1,0 +1,32 @@
+.roleWrap {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  .menu {
+    margin-right: 20px;
+    padding-right: 20px;
+    :global(.ant-menu-item) {
+      height: 80px;
+      margin: 0;
+      padding-top: 15px;
+      line-height: 1;
+      border-bottom: 1px solid #e8e8e8;
+      &::after {
+        left: 0;
+        border-left: 3px solid #4e75ff;
+        border-right: 0;
+      }
+    }
+    :global(.ant-menu-item-selected) {
+      &::after {
+        left: 0;
+        border-left: 3px solid #4e75ff;
+        border-right: 0;
+      }
+    }
+  }
+  .tabsWrap {
+    flex: 1;
+  }
+}
